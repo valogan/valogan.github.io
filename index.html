@@ -22,25 +22,5 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 
-<script>
-
-    var ipAddress = null;
-    $(document).ready(function() {
-      // Make an AJAX request to a server endpoint to record the IP
-      $.get("record_ip.php", function(data) {
-        // Optionally, you can handle the response if needed
-        ipAddress = data;
-      });
-    });
-
-    var label = document.createElement("label");
-    label.textContent = "Your IP address is " + ipAddress;
-    document.getElementById("body-id").appendChild(label);
-
-</script> 
-
-    <div>
-        <p1> Your IP address is </p1>
-    </div>
 </body>
 </html>
